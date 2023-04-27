@@ -1,11 +1,11 @@
 # NumDer
-contains codes in Matlab, in particular, there are 3 functions (NumDerEquispacedData, Fun, DerFun) and 1 script (Test) to tset the proposed algorithm: NumDerEquispacedData.
+contains codes in Matlab, in particular, there are 3 functions (NumDerEquispacedData, Fun, DerFun) and 1 script (Test) to test the proposed algorithm: NumDerEquispacedData.
 
-Purpose: Compute the derivative of order nu of a function starting from its values at uniformly distributed points on a closed interval
+Purpose: Compute the derivative of order $nu$ of a function starting from its values at uniformly distributed points on a closed interval
 # NumDerEquispacedData
-Sintax: [d,ifail]=NumDerEquispacedData(a,b,nu,f)
+Sintax: $[d,ifail]=NumDerEquispacedData(a,b,nu,f)$
 
-Purpose: Compute the derivatives of a function F starting from its values (f) at uniformly distributed points.
+Purpose: Compute the derivatives of a function $F$ starting from its values ($f$) at uniformly distributed points.
 
 Description: Given a vector f containing the (n+1) values of function F at k(b-a)/n, k=0,1,...,n, computes 
 d=(d1,d2,...,dm) the derivatives of order nu of F at a+(k+nu/2)(b-a)/n, k=0,1,...,m-1, m=n-nu+1,
