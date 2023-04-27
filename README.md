@@ -24,7 +24,7 @@ output $ifail$ – integer scalar, $ifail=0$ unless the function detects an erro
     
 Error Indicators and Warnings. Here is the list of errors or warnings detected by the function:
         
-        $`ifail=1`$ - on entry $`a >= b`$ or $`nu <= 0`$.
+        $'ifail=1'$ - on entry $`a >= b`$ or $`nu <= 0`$.
  	
         $`ifail=2`$ - the method cannot be applied because $`n < nu+2`$.
     
