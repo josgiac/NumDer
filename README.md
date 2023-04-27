@@ -24,8 +24,27 @@ output $ifail$ – integer scalar, $ifail=0$ unless the function detects an erro
     
 Error Indicators and Warnings. Here is the list of errors or warnings detected by the function:
         
-        $ifail=1$ - on entry  $a >= b$	or $nu <= 0$.
+        $ifail=1$ - on entry $a >= b$ or $nu <= 0$.
  	
         $ifail=2$ - the method cannot be applied because $n < nu+2$.
     
+# Test
+is a script that can be used to test [d,ifail] = NumDerEquispacedData(a,b,nu,f)
+
+In particular you can choose the following parameters
+
+$[a,b]$ - the domain of the function $F$
+
+$n+1$ - the number of known values of $F$
+
+type  -  the type of the function given by Fun(x,type) that we want to test 
+    type=1 --> f(x)=1/(1+x^2);
+    type=2 --> f(x)=cos((1+x)^2)
+    type=3 --> f(x)=exp(x)
+DerOrd - the Order of the Derivative $= nu$
+    For type=1,2   DerOrd=1,2,3
+    For type=3   DerOrd=1,2,3, ....
 # Fun
+[y] = Fun(x,type) is the function used in Test
+# DerFun
+[y] = DerFun(x,type,DerOrd) is the derivative of Fun of order DerOrd
