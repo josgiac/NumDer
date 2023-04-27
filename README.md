@@ -12,7 +12,7 @@ $d=(d1,d2,...,dm)$ the derivatives of order $nu$ of $F$ at $a+(k+nu/2)(b-a)/n,$ 
 
 Parameters:
 
-input $a, b$ - double scalar. The closed interval $[a,b]$ is the domain of $F$. (Constraints: a<b)
+input $a, b$ - double scalar. The closed interval $[a,b]$ is the domain of $F$. (Constraints: $a<b$)
 
 input $nu$ - integer scalar.  The values of $nu$ is the order of the searched derivatives. (Constraints: $nu>= 1$)
 
