@@ -14,7 +14,7 @@ Parameters:
 
 input $a, b$ - double scalar. The closed interval $[a,b]$ is the domain of $F$. (Constraints: $a<b$)
 
-input $nu$ - integer scalar.  The values of $nu$ is the order of the searched derivatives. (Constraints: $nu\ge 1$)
+input $nu$ - integer scalar.  The values of $nu$ is the order of the searched derivatives. (Constraints: $nu>= 1$)
 
 input $f$ - double vector with $n+1$ components. $f(j+1)$ must contain $F\left(a+j(b-a)/n\right)$, $j=0,1,\dots,n$. {\it Constraints:} $n>= nu+2$.
 
