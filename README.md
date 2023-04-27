@@ -12,10 +12,11 @@ d=(d1,d2,...,dm) the derivatives of order nu of F at a+(k+nu/2)(b-a)/n, k=0,1,..
 
 Parameters:
 
-input a, b - double scalar. The closed interval [a,b] is the domain of F. (Constraints: a<b)
+input a, b - double scalar. The closed interval $[a,b]$ is the domain of $F$. (Constraints: a<b)
 
-input nu - integer scalar.  The values of $nu$ is the order of the searched derivatives. {\it Constraints:} $nu\ge 1$.
-        \item {\bf input $f$} - double vector with $n+1$ components. $f(j+1)$ must contain $F\left(a+j(b-a)/n\right)$, $j=0,1,\dots,n$. {\it Constraints:} $n\ge nu+2$.
+input nu - integer scalar.  The values of $nu$ is the order of the searched derivatives. (Constraints: $nu\ge 1$)
+
+input $f$ - double vector with $n+1$ components. $f(j+1)$ must contain $F\left(a+j(b-a)/n\right)$, $j=0,1,\dots,n$. {\it Constraints:} $n\ge nu+2$.
         \item {\bf output $d$} - double vector with $m=n-nu+1$ components. $d(j+1)$  contains the approximation of $$F^{(nu)}\left(a+\left(j+\frac{nu}{2}\right)\frac{b-a}{n}\right),\quad j=0,1,\dots,m-1.$$ 
         \item {\bf output $ifail$} – integer scalar, $ifail=0$ unless the function detects an error (see Error Indicators and Warnings).
     \end{itemize}
