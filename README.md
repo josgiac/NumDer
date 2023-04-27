@@ -7,8 +7,8 @@ Sintax: $[d,ifail]=NumDerEquispacedData(a,b,nu,f)$
 
 Purpose: Compute the derivatives of a function $F$ starting from its values ($f$) at uniformly distributed points.
 
-Description: Given a vector f containing the (n+1) values of function F at k(b-a)/n, k=0,1,...,n, computes 
-d=(d1,d2,...,dm) the derivatives of order nu of F at a+(k+nu/2)(b-a)/n, k=0,1,...,m-1, m=n-nu+1,
+Description: Given a vector $f$ containing the $n+1$ values of function $F$ at $k(b-a)/n$, $k=0,1,...,n,$ computes 
+$d=(d1,d2,...,dm)$ the derivatives of order $nu$ of $F$ at $a+(k+nu/2)(b-a)/n, k=0,1,...,m-1, m=n-nu+1.$
 
 Parameters:
 
