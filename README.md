@@ -19,13 +19,13 @@ input $nu$ - integer scalar.  The values of $nu$ is the order of the searched de
 input $f$ - double vector with $n+1$ components, $f(j+1)$ must contain $F\left(a+j(b-a)/n\right)$, $j=0,1,\dots,n$. (Constraints: $n>= nu+2$)
 
 output $d$ - double vector with $m=n-nu+1$ components, $d(j+1)$  contains the approximation of $$F^{(nu)}\left(a+\left(j+\frac{nu}{2}\right)\frac{b-a}{n}\right),\quad j=0,1,\dots,m-1.$$ 
-        \item {\bf output $ifail$} – integer scalar, $ifail=0$ unless the function detects an error (see Error Indicators and Warnings).
-    \end{itemize}
-    \item{\bf Error Indicators and Warnings.} Here is the list of errors or warnings detected by the function:
-    \begin{itemize}
-        \item {\bf $ifail=1$} - on entry  $a\ge b$	or $nu\le 0$.
- 	\item {\bf $ifail=2$} - the method cannot be applied because $n<nu+2$.
-    \end{itemize}
-\end{itemize}
 
+output $ifail$ – integer scalar, $ifail=0$ unless the function detects an error (see Error Indicators and Warnings).
+    
+Error Indicators and Warnings. Here is the list of errors or warnings detected by the function:
+        
+        $ifail=1$ - on entry  $a >= b$	or $nu <= 0$.
+ 	
+        $ifail=2$ - the method cannot be applied because $n < nu+2$.
+    
 # Fun
