@@ -8,13 +8,13 @@ Sintax: $[d,ifail]=NumDerEquispacedData(a,b,nu,f)$
 Purpose: Compute the derivatives of a function $F$ starting from its values ($f$) at uniformly distributed points.
 
 Description: Given a vector $f$ containing the $n+1$ values of function $F$ at $k(b-a)/n$, $k=0,1,...,n,$ computes 
-$d=(d1,d2,...,dm)$ the derivatives of order $nu$ of $F$ at $a+(k+nu/2)(b-a)/n, k=0,1,...,m-1, m=n-nu+1.$
+$d=(d1,d2,...,dm)$ the derivatives of order $nu$ of $F$ at $a+(k+nu/2)(b-a)/n,$ $k=0,1,...,m-1$, $m=n-nu+1.$
 
 Parameters:
 
-input a, b - double scalar. The closed interval $[a,b]$ is the domain of $F$. (Constraints: a<b)
+input $a, b$ - double scalar. The closed interval $[a,b]$ is the domain of $F$. (Constraints: $a<b$)
 
-input nu - integer scalar.  The values of $nu$ is the order of the searched derivatives. (Constraints: $nu\ge 1$)
+input $nu$ - integer scalar.  The values of $nu$ is the order of the searched derivatives. (Constraints: $nu\ge 1$)
 
 input $f$ - double vector with $n+1$ components. $f(j+1)$ must contain $F\left(a+j(b-a)/n\right)$, $j=0,1,\dots,n$. {\it Constraints:} $n\ge nu+2$.
         \item {\bf output $d$} - double vector with $m=n-nu+1$ components. $d(j+1)$  contains the approximation of $$F^{(nu)}\left(a+\left(j+\frac{nu}{2}\right)\frac{b-a}{n}\right),\quad j=0,1,\dots,m-1.$$ 
