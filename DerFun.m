@@ -12,7 +12,7 @@ function [y] = DerFun(x,type,DerOrd)
 %          y=derivative of order DerOrd   
 
 switch type
-    case 1 % y=1/(1+x^2);
+    case 1 % f(x)=1/(1+x^2);
         switch DerOrd
             case 1
                 y=-2.*x./((1+x.^2).^2);
@@ -21,7 +21,7 @@ switch type
             case 3
                 y=(24.*x)./((1+(x.^2)).^3)-(48.*(x.^3))./((1+(x.^2)).^4);
         end
-    case 2  % y=cos((1+x)^2);
+    case 2  % f(x)=cos((1+x)^2);
         switch DerOrd
             case 1
                 y=-2.*(1+x).*sin((1+x).^2);
@@ -30,7 +30,7 @@ switch type
             case 3
                 y=8.*((1+x).^3).*sin((1+x).^2)-12.*(1+x).*cos((1+x).^2);
         end
-    case 3  % y=exp(x);
+    case 3  % f(x)=exp(x);
         y=exp(x);
 end
 
