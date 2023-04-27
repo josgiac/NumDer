@@ -38,12 +38,19 @@ $[a,b]$ - the domain of the function $F$
 $n+1$ - the number of known values of $F$
 
 type  -  the type of the function given by Fun(x,type) that we want to test 
+    
     type=1 --> f(x)=1/(1+x^2);
+    
     type=2 --> f(x)=cos((1+x)^2)
+    
     type=3 --> f(x)=exp(x)
+
 DerOrd - the Order of the Derivative $= nu$
+    
     For type=1,2   DerOrd=1,2,3
+    
     For type=3   DerOrd=1,2,3, ....
+
 # Fun
 [y] = Fun(x,type) is the function used in Test
 # DerFun
