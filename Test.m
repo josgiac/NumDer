@@ -1,10 +1,10 @@
 % TEST for FUNCTION ---> [d,ifail] = NumDerEquispacedData(a,b,nu,f)
 % --------------- Parameters to change ---------------- %
-% [a,b] Domain of the function f
+% [a,b] Domain of the function F
 a=0;
 b=1;
 
-% n+1 Number of known values of the function f
+% n+1 Number of known values of the function F
 n=25; 
 
 % type   - type of function
