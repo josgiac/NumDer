@@ -1,5 +1,5 @@
 % TEST for FUNCTION ---> [d,ifail] = NumDerEquispacedData(a,b,nu,f)
-% --------------- Parameters to change ---------------- %
+% ----------------- Parameters to change ----------------- %
 % [a,b] Domain of the function F
 a=0;
 b=1;
