@@ -48,7 +48,7 @@ f=Fun(vxi,type);
 % Computation of the derivative of Fun(x,type) of order DerOrd
 [Df,ifail] = NumDerEquispacedData(a,b,DerOrd,f); 
 
-% Check for errors or warnings
+% Check for error indicators or warnings
 if ifail>0
     fprintf('\n ifail=%i for the derivative of order %i \n',ifail,DerOrd)
 else 
