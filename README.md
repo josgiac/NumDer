@@ -1,5 +1,5 @@
 # NumDer
-contains codes in Matlab, in particular, there are 3 functions (NumDerEquispacedData, Fun, DerFun) and 1 script (Test) to test the proposed algorithm: NumDerEquispacedData.
+It contains codes in Matlab, in particular, there are 3 functions (NumDerEquispacedData, Fun, DerFun) and 1 script (Test) to test the proposed algorithm: NumDerEquispacedData.
 
 Purpose: Compute the derivative of order $nu$ of a function starting from its values at uniformly distributed points on a closed interval
 # NumDerEquispacedData
@@ -24,7 +24,7 @@ output $ifail$ – integer scalar, $ifail=0$ unless the function detects an erro
     
 Error Indicators and Warnings. Here is the list of errors or warnings detected by the function:
         
-        $ifail=1$ - on entry $a >= b$ or $nu <= 0$.
+        $$ifail=1$$ - on entry $a >= b$ or $nu <= 0$.
  	
         $ifail=2$ - the method cannot be applied because $n < nu+2$.
     
