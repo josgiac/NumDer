@@ -1,38 +1,54 @@
-%TEST for FUNCTION ---> [d,ifail] = NumDerEquispacedData(a,b,nu,f)
-%---------------Parameter to change
-%[a,b] domain of the function F
+% TEST for FUNCTION ---> [d,ifail] = NumDerEquispacedData(a,b,nu,f)
+% --------------- Parameter to change 
+% [a,b] Domain of the function f
 a=0;
 b=1;
-%n+1 number of known values of F
+
+% n+1 Number of known values of the function f
 n=25; 
+
 % type   - type of function
 %          type=1 --> f(x)=1/(1+x^2);
 %          type=2 --> f(x)=cos((1+x)^2)
 %          type=3 --> f(x)=exp(x)
 type=3;
-%DerOrd - Order of the derivative=nu
-%         For type=1,2   DerOrd=1,2,3
-%         For type=3   DerOrd=1,2,3, ....
+
+% DerOrd - Order of the derivative=nu
+%          For type=1,2   DerOrd=1,2,3
+%          For type=3     DerOrd=1,2,3,...
 DerOrd=1; 
 
-%---------------END Parameter to change
+% --------------- END Parameter to change 
 
-%---------------
-h=1/n; %step in [0,1]
-hTrue=(b-a)/n; %step in [a,b]
+% ---------------------------------------
+
+% Discretization step in [0,1]
+h=1/n; 
+
+% Discretization step in [a,b]
+hTrue=(b-a)/n;
+
+% Equispaced points
 vxi=a:hTrue:b; 
+
+% Function selection
 f=Fun(vxi,type);
+
 fprintf('\n Derivative of order %i of function of type %i\n',DerOrd,type)
 fprintf('\n Number of data = %i, step in [0,1]= %1.5e\n',n+1,h)
 
+% True derivative equispaced points
 m=n-DerOrd+1;
 aNew=a+DerOrd*hTrue/2;
 bNew=a+(m-1+DerOrd/2)*hTrue;
 vx=aNew:hTrue:bNew;
-%True derivative of Fun(x,type) of order DerOrd
+
+% True derivative of Fun(x,type) of order DerOrd
 TrueDf=DerFun(vx,type,DerOrd); 
-%DF  computed derivative of Fun(x,type) of order DerOrd
+
+% Computation of the derivative of Fun(x,type) of order DerOrd
 [Df,ifail] = NumDerEquispacedData(a,b,DerOrd,f); 
+
 if ifail>0
     fprintf('\n ifail=%i for the derivative of order %i \n',ifail,DerOrd)
 else
