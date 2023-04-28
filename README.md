@@ -61,21 +61,19 @@ DerOrd - the Order of the Derivative $= nu$
 "An FFT method for the numerical differentiation",
 Applied Mathematics and Computation, 445:127856, 2023.
 
-[2] N. Egidi, P. Maponi,
+[2]	N. Egidi, J. Giacomini, P. Maponi, 
+"A Fredholm integral operator for the differentiation problem", 
+Computational and Applied Mathematics, 41(5):220, 2022.
+
+[3] N. Egidi, P. Maponi,
 "A spectral method for the solution of boundary value problems",
 Applied Mathematics and Computation, 409:125812, 2021.
 
-[3] N. Egidi, P. Maponi,
+[4] N. Egidi, P. Maponi,
 "An SVE Approach for the Numerical Solution of Ordinary Differential Equations",
  Sergeyev Y., Kvasov D. (eds) Numerical Computations: Theory and Algorithms. NUMTA 2019. Lecture Notes in Computer Science, Springer, Cham,
  11973:70-85, 2020.
 
-[4] N. Egidi, P. Maponi, 
+[5] N. Egidi, P. Maponi, 
 "The singular value expansion of the Volterra integral equation associated to a numerical differentiation problem",
 Journal of Mathematical Analysis and Applications, 460:656-681, 2018.
-
-65)	N. Egidi, J. Giacomini, P. Maponi, A Fredholm integral operator for the differentiation problem, Computational and Applied Mathematics, 2022, 41(5), 220
-
-
-
-
