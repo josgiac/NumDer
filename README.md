@@ -54,7 +54,7 @@ DerOrd - the Order of the Derivative $= nu$
 # Fun
 [y] = Fun(x,type) is the function used in Test.
 # DerFun
-[y] = DerFun(x,type,DerOrd) is the exact derivative of Fun of order DerOrd.
+[y] = DerFun(x,type,DerOrd) is the analytical derivative of Fun of order DerOrd.
 # References
 
 [1] N. Egidi, J. Giacomini, P. Maponi, M. Youssef, 
