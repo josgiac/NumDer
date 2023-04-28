@@ -3,7 +3,7 @@ It contains codes in Matlab, in particular, there are 3 functions (NumDerEquispa
 
 Purpose: Compute the derivative of order $nu$ of a function $F$ starting from its values at uniformly distributed points on a closed interval $[a,b]$.
 # NumDerEquispacedData
-Sintax: $[d,ifail]=NumDerEquispacedData(a,b,nu,f)$
+Syntax: $[d,ifail]=NumDerEquispacedData(a,b,nu,f)$
 
 Purpose: Compute the derivatives of a function $F$ starting from its values ($f$) at uniformly distributed points.
 
