@@ -56,33 +56,24 @@ DerOrd - the Order of the Derivative $= nu$
 # DerFun
 [y] = DerFun(x,type,DerOrd) is the derivative of Fun of order DerOrd.
 # References
-[] N. Egidi, P. Maponi, 
+
+[1] N. Egidi, J. Giacomini, P. Maponi, M. Yousse, 
+"An FFT method for the numerical differentiation",
+Applied Mathematics and Computation, 445:127856, 2023.
+
+[2] N. Egidi, P. Maponi,
+"A spectral method for the solution of boundary value problems",
+Applied Mathematics and Computation, 409, 2021.
+
+[3] N. Egidi, P. Maponi,
+"An SVE Approach for the Numerical Solution of Ordinary Differential Equations",
+ Sergeyev Y., Kvasov D. (eds) Numerical Computations: Theory and Algorithms. NUMTA 2019. Lecture Notes in Computer Science, Springer, Cham,
+ 11973:70-85, 2020.
+
+[4] N. Egidi, P. Maponi, 
 "The singular value expansion of the Volterra integral equation associated to a numerical differentiation problem",
-Journal of Mathematical Analysis and Applications, 460, 656-681, 2018.
+Journal of Mathematical Analysis and Applications, 460:656-681, 2018.
 
-@article{EGMA1,
- author = " Nadaniela Egidi and Pierluigi Maponi ",
- title = "An {SVE} Approach for the Numerical Solution of Ordinary Differential Equations",
- year = "2020",
- journal = "Sergeyev Y., Kvasov D. (eds) Numerical Computations: Theory and Algorithms. NUMTA 2019. Lecture Notes in Computer Science, Springer, Cham",
- volume = "11973 ",
- pages = "70--85"
-}
 
-@article{EGMA2,
- author = " Nadaniela Egidi and Pierluigi Maponi ",
- title = "A spectral method for the solution of boundary value problems",
- year = "2021",
- journal = "Applied Mathematics and Computation",
- volume = "409"
-}
 
-@article{EGMA3,
- author = " Nadaniela Egidi and Josephin Giacomini and Pierluigi Maponi and Michael Youssef",
- title = "An {FFT} method for the numerical differentiation",
- year = "2023",
- journal = "Applied Mathematics and Computation",
- volume = "445",
- pages = "127856"
-}
 
