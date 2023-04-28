@@ -55,3 +55,48 @@ DerOrd - the Order of the Derivative $= nu$
 [y] = Fun(x,type) is the function used in Test.
 # DerFun
 [y] = DerFun(x,type,DerOrd) is the derivative of Fun of order DerOrd.
+# References
+@article{EGMA0,
+ author = " Nadaniela Egidi and Pierluigi Maponi ",
+ title = "Singular value expansion for the {G}reen function of {H}elmholtz operator",
+ year = "2011",
+ journal = "Journal of Mathematical Analysis and Applications",
+ volume = "377",
+ pages = "670--682"
+}
+
+@article{EGMA,
+ author = " Nadaniela Egidi and Pierluigi Maponi ",
+ title = "The singular value expansion of the {V}olterra integral equation associated to a numerical differentiation problem",
+ year = "2018",
+ journal = "Journal of Mathematical Analysis and Applications",
+ volume = "460",
+ pages = "656--681"
+}
+
+@article{EGMA1,
+ author = " Nadaniela Egidi and Pierluigi Maponi ",
+ title = "An {SVE} Approach for the Numerical Solution of Ordinary Differential Equations",
+ year = "2020",
+ journal = "Sergeyev Y., Kvasov D. (eds) Numerical Computations: Theory and Algorithms. NUMTA 2019. Lecture Notes in Computer Science, Springer, Cham",
+ volume = "11973 ",
+ pages = "70--85"
+}
+
+@article{EGMA2,
+ author = " Nadaniela Egidi and Pierluigi Maponi ",
+ title = "A spectral method for the solution of boundary value problems",
+ year = "2021",
+ journal = "Applied Mathematics and Computation",
+ volume = "409"
+}
+
+@article{EGMA3,
+ author = " Nadaniela Egidi and Josephin Giacomini and Pierluigi Maponi and Michael Youssef",
+ title = "An {FFT} method for the numerical differentiation",
+ year = "2023",
+ journal = "Applied Mathematics and Computation",
+ volume = "445",
+ pages = "127856"
+}
+
