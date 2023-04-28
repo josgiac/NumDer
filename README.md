@@ -1,5 +1,5 @@
 # NumDer
-It contains codes in Matlab, in particular, there are 3 functions (NumDerEquispacedData, Fun, DerFun) and 1 script (Test) to test the proposed algorithm: NumDerEquispacedData.
+It contains codes in Matlab, in particular, there are 3 functions (NumDerEquispacedData, Fun, DerFun) and 1 script (Test) to test the algorithm proposed and implemented in NumDerEquispacedData.
 
 Purpose: Compute the derivative of order $nu$ of a function $F$ starting from its values at uniformly distributed points on a closed interval $[a,b]$.
 # NumDerEquispacedData
@@ -7,7 +7,7 @@ Sintax: $[d,ifail]=NumDerEquispacedData(a,b,nu,f)$
 
 Purpose: Compute the derivatives of a function $F$ starting from its values ($f$) at uniformly distributed points.
 
-Description: Given a vector $f$ containing the $n+1$ values of function $F$ at $k(b-a)/n$, $k=0,1,...,n,$ computes 
+Description: Given a vector $f$ containing the $n+1$ values of the function $F$ at $k(b-a)/n$, $k=0,1,...,n,$ computes 
 $d=(d1,d2,...,dm)$ the derivatives of order $nu$ of $F$ at $a+(k+nu/2)(b-a)/n,$ $k=0,1,...,m-1$, $m=n-nu+1.$
 
 Parameters:
@@ -54,7 +54,7 @@ DerOrd - the Order of the Derivative $= nu$
 # Fun
 [y] = Fun(x,type) is the function used in Test.
 # DerFun
-[y] = DerFun(x,type,DerOrd) is the derivative of Fun of order DerOrd.
+[y] = DerFun(x,type,DerOrd) is the exact derivative of Fun of order DerOrd.
 # References
 
 [1] N. Egidi, J. Giacomini, P. Maponi, M. Youssef, 
