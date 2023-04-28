@@ -3,7 +3,7 @@ function [d,ifail] = NumDerEquispacedData(a,b,nu,f)
 %
 % INPUT:
 % [a,b]    - domain of the function F
-% nu       - order of the computed derivative of F, o=1,2,...
+% nu       - order of the computed derivative of F, nu=1,2,...
 % f(1:n+1) - vector containing the values of F at n+1 uniformly distributed points
 %            in [a,b] ---> f(j)=F(a+(j-1)(b-a)/n);
 %
@@ -12,8 +12,8 @@ function [d,ifail] = NumDerEquispacedData(a,b,nu,f)
 %            d(j)=derivative of order nu of F at x=a+(j-1+nu/2)(b-a)/n;
 % ifail    - Error Indicators and Warnings 
 %            ifail=0 --> no error detected;
-%            ifail=1 --> on entry  a>=b or o<1;
-%            ifail=2 --> the method cannot be applied because n<o+2.
+%            ifail=1 --> on entry  a>=b or nu<1;
+%            ifail=2 --> the method cannot be applied because n<nu+2.
 
 n=length(f)-1;
 
