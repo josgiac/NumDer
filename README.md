@@ -56,21 +56,9 @@ DerOrd - the Order of the Derivative $= nu$
 # DerFun
 [y] = DerFun(x,type,DerOrd) is the derivative of Fun of order DerOrd.
 # References
- author = " Nadaniela Egidi and Pierluigi Maponi ",
- title = "Singular value expansion for the {G}reen function of {H}elmholtz operator",
- year = "2011",
- journal = "Journal of Mathematical Analysis and Applications",
- volume = "377",
- pages = "670--682"
-
-@article{EGMA,
- author = " Nadaniela Egidi and Pierluigi Maponi ",
- title = "The singular value expansion of the {V}olterra integral equation associated to a numerical differentiation problem",
- year = "2018",
- journal = "Journal of Mathematical Analysis and Applications",
- volume = "460",
- pages = "656--681"
-}
+[] N. Egidi, P. Maponi, 
+"The singular value expansion of the Volterra integral equation associated to a numerical differentiation problem",
+Journal of Mathematical Analysis and Applications, 460, 656-681, 2018.
 
 @article{EGMA1,
  author = " Nadaniela Egidi and Pierluigi Maponi ",
